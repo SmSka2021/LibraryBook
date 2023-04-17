@@ -1,0 +1,47 @@
+.container {
+  margin-bottom:4.2rem;
+}
+.container__item {
+  display:flex;
+  gap:24px;
+}
+.container__name {
+  display:flex;
+  gap:2.4rem;
+  align-items:center;
+  margin-bottom:1.6rem;
+}
+.avatar {
+  width:3.2rem;
+  height:3.2rem;
+}
+.item {
+  font-weight:400;
+  font-size:1.6rem;
+  color:#727272;
+}
+.review__txt {
+  font-weight:400;
+  font-size:1.6rem;
+  line-height:2.4rem;
+  color:#363636;
+  margin-top:1.6rem;
+}
+
+@media screen and (max-width:450px) {
+  .container__item {
+    flex-direction:column;
+    gap:3px;
+  }
+  .item {
+    font-size:1.5rem;
+  }
+  .review__txt {
+    font-size:1.5rem;
+    line-height:2.0rem;
+    margin-top:1.6rem;
+  }
+  .container {
+    margin-bottom:3.2rem
+  }
+}

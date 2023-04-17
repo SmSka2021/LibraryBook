@@ -1,0 +1,170 @@
+.header {
+  position:relative;
+  width:77.083%;
+  min-width:288px;
+  height:58px;
+  margin:32px auto 15px;
+  display:flex;
+  align-items:center;
+}
+.header__logo {
+  display:flex;
+  gap:8px;
+  height:40px;
+  align-items:center;
+}
+.header__logo_img {
+  width:40px;
+  height:40px;
+}
+.header__logo_txt {
+  font-size:2rem;
+}
+.header__title {
+  font-style:normal;
+  font-weight:700;
+  font-size:3.2rem;
+  line-height:4px;
+  color:#363636;
+  margin-left:10.8%;
+}
+.header__auth {
+  position:absolute;
+  right:0;
+  display:flex;
+  align-items:center;
+  gap:1.6rem;
+  border:none;
+  background:transparent;
+  cursor:pointer;
+}
+.header__auth_name {
+  border:none;
+  background:transparent;
+  font-weight:600;
+  font-size:1.4rem;
+  line-height:1.8rem;
+  color:#363636;
+  cursor:pointer;
+}
+.header__auth_img {
+  width:58px;
+  border-radius:50%;
+}
+.header__auth_btn {
+  width:58px;
+  height:58px;
+  border:none;
+  background:transparent;
+  border-radius:50%;
+}
+.header__auth_nav {
+  position:absolute;
+  width:270px;
+  height:152px;
+  padding:32px 24px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:flex-end;
+  top:58px;
+  right:0;
+  background:#FFFFFF;
+  box-shadow:4px 4px 4px rgba(54, 54, 54, 0.05), -4px 4px 4px rgba(54, 54, 54, 0.05);
+  border-radius:0 0 10px 10px;
+  z-index:10;
+}
+.auth__nav_link {
+  border:none;
+  background:transparent;
+  font-weight:700;
+  font-size:1.8rem;
+  color:#363636;
+  cursor:pointer;
+}
+.header__burger {
+  border:none;
+  width:3.2rem;
+  height:3.2rem;
+  background-color:transparent;
+  cursor:pointer;
+  display:none;
+}
+.line {
+  width:2.6rem;
+  height:3px;
+  background-color:#363636;
+  display:block;
+  margin:4px auto;
+  transition:all 0.3s ease-in-out;
+}
+.header__burger.burger_active .line:nth-child(2){
+  opacity:0;
+}
+.header__burger.burger_active .line:nth-child(1){
+  background-color:#F83600;
+  transform:translateY(7px) rotate(45deg);
+}
+.header__burger.burger_active .line:nth-child(3){
+  background-color:#F83600;
+  transform:translateY(-7px) rotate(-45deg);
+}
+
+
+@media screen and (max-width:1200px) {
+  .header {
+    width:83.33%;
+  }
+}
+@media screen and (max-width:900px) {
+  .header__title {
+    margin-left:5%;
+  }
+  .auth__nav_link {
+    font-size:1.4rem;
+  }
+}
+@media screen and (max-width:769px) {
+  .header__burger {
+    display:block;
+  }
+  .header__logo,
+  .header__auth {
+    display:none;
+  }
+  .header {
+    justify-content:flex-start;
+    height:58px;
+    margin:2.2rem auto 5px;
+  }
+  .header__title {
+    margin-left:24px;
+  }
+}
+@media screen and (max-width:650px) {
+  .header {
+    width:90%;
+    margin:0 auto;
+    height:76px;
+  }
+  .header__burger {
+    width:2.4rem;
+    height:2.4rem;
+  }
+  .line {
+    width:2rem;
+    margin:3px auto;
+    height:2px;
+  }
+  .header__burger.burger_active .line:nth-child(1){
+    transform:translateY(5px) rotate(45deg);
+  }
+  .header__burger.burger_active .line:nth-child(3){
+    transform:translateY(-5px) rotate(-45deg);
+  }
+  .header__title {
+    font-size:1.8rem;
+    line-height:2.8rem;
+    margin-left:24px;
+  }
+}

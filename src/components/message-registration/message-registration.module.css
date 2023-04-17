@@ -1,0 +1,62 @@
+.message__container {
+  width:600px;
+  background:#FFFFFF;
+  border-radius:16px;
+  padding:48px 92px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:32px;
+}
+.message__title {
+  font-weight:700;
+  font-size:2.4rem;
+  color:#363636;
+}
+.message__text {
+  font-weight:400;
+  font-size:1.6rem;
+  text-align:center;
+  color:#363636;
+}
+.message__btn {
+  width:410px;
+  height:52px;
+  border:none;
+  background:linear-gradient(231.58deg, #F83600 -53.35%, #F9D423 297.76%);
+  border-radius:30px;
+  font-weight:600;
+  font-size:16px;
+  text-transform:uppercase;
+  color:#FFFFFF;
+  cursor:pointer;
+}
+.message__btn:hover {
+  box-shadow:0 2px 5px rgba(54, 54, 54, 0.1);
+}
+.message__btn:active {
+  box-shadow:0 3px 4px rgba(222, 125, 11, 0.2), 0 1px 10px rgba(249, 89, 8, 0.2);
+}
+
+@media screen and (max-width:650px) {
+  .message__container {
+    width:288px;
+    padding:42px 16px 32px;
+    gap:24px;
+  }
+  .message__title {
+    font-size:1.8rem;
+    text-align:center;
+  }
+  .message__text {
+    font-weight:400;
+    font-size:1.5rem;
+    line-height:20px;
+    text-align:center;
+  }
+  .message__btn {
+    width:256px;
+    height:40px;
+    font-size:1.2rem;
+  }
+}

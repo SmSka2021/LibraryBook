@@ -1,0 +1,30 @@
+.main {
+  width:77.083%;
+  min-width:288px;
+  display:flex;
+  flex-grow:1;
+  margin:4.7rem auto 0;
+  gap:1rem;
+}
+@media screen and (max-width:1150px) {
+  .main {
+    width:83.33%;
+  }
+
+}
+@media screen and (max-width:1000px) {
+  .main {
+    gap:0;
+  }
+}
+@media screen and (max-width:769px) {
+  .main {
+    margin:4rem auto 0;
+  }
+}
+@media screen and (max-width:650px) {
+  .main {
+    width:90%;
+    margin:1rem auto 0;
+  }
+}

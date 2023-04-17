@@ -1,0 +1,139 @@
+
+.innerContainer {
+  display:flex;
+  flex-direction:column;
+}
+.form__group {
+  position:relative;
+
+}
+.form__group_label {
+  position:absolute;
+  pointer-events:none;
+  left:12px;
+  top:19px;
+  transition:.3s;
+  font-weight:400;
+  font-size:1.4rem;
+  color:#363636;
+}
+.input:focus ~ .form__group_label,
+.input:not(:placeholder-shown) ~ .form__group_label {
+  font-weight:500;
+  font-size:12px;
+  color:#A7A7A7;
+  top:0;
+}
+.input {
+  width:416px;
+  height:56px;
+  background:#F9F9FA;
+  border-radius:4px;
+  border:none;
+  border-bottom:1px solid grey;
+  font-weight:400;
+  font-size:1.4rem;
+  color:#363636;
+  padding:0 12px;
+}
+.input__group_password {
+  margin-top:18px;
+  position:relative;
+}
+.input__error {
+  border-bottom:1px solid #F42C4F;
+}
+.error__message {
+  font-weight:500;
+  font-size:1.2rem;
+  color:#A7A7A7;
+}
+.error {
+  font-weight:500;
+  font-size:1.2rem;
+  color:#F42C4F;
+}
+.password__btn_eye {
+  position:absolute;
+  top:16px;
+  right:16px;
+  border:none;
+  background:transparent;
+  cursor:pointer;
+}
+.okIcon {
+  position:absolute;
+  top:16px;
+  right:40px;
+}
+.form__btn_submit {
+  width:416px;
+  height:52px;
+  background:linear-gradient(231.58deg, #F83600 -53.35%, #F9D423 297.76%);
+  border:1px solid #FF740F;
+  border-radius:30px;
+  font-weight:600;
+  font-size:16px;
+  color:#FFFFFF;
+  margin:50px auto 16px;
+  cursor:pointer;
+  text-transform:uppercase;
+}
+.form__btn_submit:hover {
+  box-shadow:0 2px 5px rgba(54, 54, 54, 0.1);
+}
+.form__btn_submit:disabled {
+  background:#EBEBEB;
+  cursor:not-allowed;
+  border:1px solid transparent;
+}
+.form__btn_submit:active {
+  box-shadow:0 3px 4px rgba(222, 125, 11, 0.2), 0 1px 10px rgba(249, 89, 8, 0.2);
+}
+.container__link {
+  display:flex;
+  column-gap:16px;
+  align-items:center;
+}
+.container__link_ask {
+  font-weight:400;
+  font-size:16px;
+  color:#727272;
+}
+.container__link_item {
+  font-weight:600;
+  font-size:12px;
+  color:#363636;
+  display:flex;
+  align-items:center;
+  column-gap:15px;
+  text-transform:uppercase;
+  cursor:pointer;
+}
+.input__group_lastname {
+  margin-top:36px;
+}
+@media screen and (max-width:600px) {
+  .input {
+    width:256px;
+  }
+  .form__btn_submit {
+    width:255px;
+    height:40px;
+    font-weight:600;
+    font-size:1.2rem;
+    margin-top:34px;
+  }
+  .container__link_ask {
+    font-size:1.5rem;
+    line-height:20px;
+  }
+  .container__link {
+    flex-direction:column;
+    column-gap:.7rem;
+    align-items:flex-start;
+  }
+  .input__group_password {
+    margin-top:10px;
+  }
+}

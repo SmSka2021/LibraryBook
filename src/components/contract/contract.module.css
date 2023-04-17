@@ -1,0 +1,51 @@
+.contract__container {
+  min-width:50%;
+}
+.contract__title {
+  font-weight:700;
+  font-size:3.2rem;
+  line-height:4rem;
+  color:#363636;
+  margin-bottom:3.2rem;
+}
+ol {
+  counter-reset:item;
+}
+.contract__list_item:before {
+  content:counters(item, '.') '. ';
+  counter-increment:item;
+  font-weight:400;
+  font-size:1.6rem;
+  line-height:2.4rem;
+  color:#363636;
+}
+.contract__list_item {
+  font-weight:400;
+  font-size:1.6rem;
+  line-height:2.4rem;
+  color:#363636;
+  margin:1.6rem 0;
+}
+.item_level1 {
+  font-weight:600;
+}
+.contract__list_leve1 {
+  padding-left:3rem;
+}
+@media screen and (max-width:450px) {
+  .contract__title {
+    font-size:1.8rem;
+    line-height:2.8rem;
+    margin-top:10px;
+  }
+  .contract__list_item {
+    font-weight:400;
+    font-size:1.5rem;
+    line-height:2rem;
+  }
+  .item_level1 {
+    font-weight:600;
+    font-size:1.6rem;
+    line-height:2.4rem;
+  }
+}

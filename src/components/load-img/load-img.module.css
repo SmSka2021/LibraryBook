@@ -1,0 +1,21 @@
+
+.header__auth_img {
+  width:58px;
+  cursor:pointer;
+  border-radius:50%;
+}
+.header__auth_form {
+  display:flex;
+  position:relative;
+}
+.load_img {
+  position:absolute;
+  right:0;
+  opacity:0;
+}
+.avatar_user {
+  width:160px;
+  height:160px;
+  border-radius:50%;
+  cursor:pointer;
+}

@@ -1,0 +1,96 @@
+.wrapper {
+  position:relative;
+  width:77.083%;
+  min-width:288px;
+  margin:0 auto;
+  display:flex;
+  flex-direction:column;
+  flex-grow:1;
+}
+.container__item_user {
+  margin:47px 0 92px;
+  display:flex;
+  column-gap:30px;
+  align-items:center;
+}
+.avatar_user {
+  width:160px;
+  height:160px;
+  border-radius:50%;
+  cursor:pointer;
+}
+.name_user {
+  font-weight:500;
+  font-size:5.2rem;
+  line-height:64px;
+  color:var(--color-text);
+}
+.title {
+  font-weight:700;
+  font-size:2.4rem;
+  line-height:30px;
+  color:var(--color-text);
+  margin-bottom:8px;
+}
+.title__description {
+  font-weight:400;
+  font-size:1.6rem;
+  line-height:24px;
+  color:var(--color-dayDisabledColor);
+}
+.container__inform_booking {
+  margin-top:92px;
+}
+.container__order {
+  width:100%;
+  padding:32px 0 92px;
+  position:relative;
+}
+.container__slider {
+  height:430px;
+}
+.carousel__item {
+  width:230px !important;
+}
+li[style] {
+  width:230px !important;
+}
+
+@media screen and (max-width:1200px) {
+  .wrapper {
+    width:83.33%;
+  }
+}
+
+@media screen and (max-width:769px) {
+  .wrapper {
+    margin:2.2rem auto 5px;
+  }
+}
+@media screen and (max-width:650px) {
+  .wrapper {
+    width:90%;
+    margin:0 auto;
+  }
+  .empty__message,
+  .title {
+    font-size:1.8rem;
+    line-height:28px;
+  }
+  .title__description {
+    font-size:1.5rem;
+    line-height:20px;
+  }
+  .container__item_user {
+    margin:35px 0 42px;
+    flex-direction:column;
+    row-gap:20px;
+  }
+  .avatar_user {
+    width:150px;
+    height:150px;
+  }
+  .name_user {
+    font-size:2.6rem;
+  }
+}

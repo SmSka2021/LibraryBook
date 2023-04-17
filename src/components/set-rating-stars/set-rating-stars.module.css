@@ -1,0 +1,22 @@
+.container__stars {
+  display:flex;
+}
+.btn__star {
+  width:55px;
+  border:none;
+  background:transparent;
+  cursor:pointer;
+}
+.img_star {
+  width:36px;
+  height:34px;
+}
+@media screen and (max-width:650px) {
+  .btn__star {
+    width:40px;
+  }
+  .btn__star svg {
+    width:26px;
+    height:25px;
+  }
+}

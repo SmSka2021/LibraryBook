@@ -1,0 +1,14 @@
+.container__stars {
+  display:flex;
+  gap:1.2rem;
+}
+.img_star {
+  width:24px;
+  height:24px;
+}
+@media screen and (max-width:450px) {
+  .img_star_book {
+    width:34px;
+    height:34px;
+  }
+}
