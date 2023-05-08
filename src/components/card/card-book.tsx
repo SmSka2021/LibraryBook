@@ -89,7 +89,7 @@ export const CardBook = (props: PropsBook) => {
              onKeyDown={(event: React.KeyboardEvent) => openCard(event, bookOne.id)}
              onMouseDown={(event: React.MouseEvent) => openCard(event, bookOne.id)}>
             <img loading='lazy' className={listCheck ? st.card__img_list : st.card__img}
-                 src={bookOne.image?.url ? `${baseUrl}${bookOne.image.url}` : imgNotBook}
+                 src={bookOne.image?.url ? `${bookOne.image.url}` : imgNotBook}
                  alt='img book'/>
             <div className={st.container__card_info}>
                 <div className={listCheck ? st.container__stars_list : st.container__stars}>
