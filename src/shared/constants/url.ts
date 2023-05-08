@@ -1,4 +1,4 @@
-export const baseUrl = 'https://strapi.cleverland.by';
+export const baseUrl = 'https://library-cleverland-2jfze.ondigitalocean.app';
 export const urlAllBooks =  '/api/books';
 export const urlCategories = '/api/categories';
 export const urlRegistrationUser = '/api/auth/local/register';
