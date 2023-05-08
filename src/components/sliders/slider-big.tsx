@@ -21,7 +21,7 @@ export const SliderBig = () => {
 
     const imagesBlock = () => book?.images?.map((item: {url: string}) => (
         <SwiperSlide key={item.url}>
-            <img className='img' src={(`${baseUrl}${item.url}`)} alt="images Book" data-test-id='slide-mini'/>
+            <img className='img' src={item.url} alt="images Book" data-test-id='slide-mini'/>
         </SwiperSlide>
     ))
 
